@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Router, Link } from '@reach/router'
+import Img from 'react-image'
 import Distribucion1OterHerFran from './Distribucion1OterHerFran'
 import Distribucion2OterHerFran from './Distribucion2OterHerFran'
 import Distribucion3OterHerFran from './Distribucion3OterHerFran'
