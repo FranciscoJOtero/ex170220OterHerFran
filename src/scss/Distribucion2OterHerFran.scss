@@ -1,0 +1,107 @@
+%borde {
+
+    border: 2px solid black;
+
+}
+
+@mixin fondo($color) {
+
+    background-color: $color;
+    
+}
+
+.ContenedorGridOterHerFran {
+
+    margin: 0 auto;
+    max-width: 56em;
+    padding: 1em 0;
+    display: grid;
+    grid-template-columns: 80% 20%;
+
+    &__cabec, &__foot {
+
+        grid-column: 1/3;
+        @extend %borde;
+        @include fondo(rgb(137, 232, 245));
+        min-height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    &__princ {
+
+        grid-column: 1/2;
+        @extend %borde;
+        @include fondo(rgb(173, 241, 171));
+        min-height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    &__barra {
+
+        grid-column: 2/3;
+        @extend %borde;
+        @include fondo(rgb(245, 177, 224));
+        min-height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+}
+
+@media (max-width:600px) {
+
+    .ContenedorGridOterHerFran {
+
+        margin: 0 auto;
+        max-width: 56em;
+        padding: 1em 0;
+        display: grid;
+        grid-template-columns:100%;
+    
+        &__cabec, &__foot {
+    
+            grid-column: 1/3;
+            @extend %borde;
+            @include fondo(rgb(137, 232, 245));
+            min-height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+        }
+    
+        &__princ {
+    
+            grid-column: 1/3;
+            @extend %borde;
+            @include fondo(rgb(173, 241, 171));
+            min-height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+        }
+    
+        &__barra {
+    
+            grid-column: 1/3;
+            @extend %borde;
+            @include fondo(rgb(245, 177, 224));
+            min-height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+        }
+    
+    }    
+
+}

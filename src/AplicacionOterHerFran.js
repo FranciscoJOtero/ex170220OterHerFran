@@ -21,9 +21,9 @@ class AplicacionOterHerFran extends Component {
 
                 <Router>
                     <Distribucion1OterHerFran path="/Distribucion1OterHerFran"/>
-                    <Distribucion1OterHerFran path="/Distribucion2OterHerFran"/>
-                    <Distribucion1OterHerFran path="/Distribucion3OterHerFran"/>
-                    <Distribucion1OterHerFran path="/PruebasOterHerFran"/>
+                    <Distribucion2OterHerFran path="/Distribucion2OterHerFran"/>
+                    <Distribucion3OterHerFran path="/Distribucion3OterHerFran"/>
+                    <PruebasOterHerFran path="/PruebasOterHerFran"/>
                 </Router>
 
             </div>
