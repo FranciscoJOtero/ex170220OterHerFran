@@ -14,9 +14,9 @@ class AplicacionOterHerFran extends Component {
             <div>
                 <nav className="navFlexOterHerFran">
                     <div className="navFlexOterHerFran__item1"> <Link to="/Distribucion1OterHerFran"> Distribucion 1 </Link> </div>
-                    <div className="navFlexOterHerFran__item2"> <Link to="/Distribucion2OterHerFran"> Distribucion 1 </Link> </div>
-                    <div className="navFlexOterHerFran__item3"> <Link to="/Distribucion3OterHerFran"> Distribucion 1 </Link> </div>
-                    <div className="navFlexOterHerFran__item4"> <Link to="/PruebasOterHerFran"> Distribucion 1 </Link> </div>
+                    <div className="navFlexOterHerFran__item2"> <Link to="/Distribucion2OterHerFran"> Distribucion 2 </Link> </div>
+                    <div className="navFlexOterHerFran__item3"> <Link to="/Distribucion3OterHerFran"> Distribucion 3 </Link> </div>
+                    <div className="navFlexOterHerFran__item4"> <Link to="/PruebasOterHerFran"> Pruebas </Link> </div>
                 </nav>
 
                 <Router>

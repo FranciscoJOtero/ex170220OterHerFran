@@ -1,0 +1,122 @@
+%borde {
+
+    border: 2px solid black;
+
+}
+
+@mixin colorFondo($color) {
+
+    background-color: $color;
+    
+}
+
+.ContGridOterHerFran {
+
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    box-sizing: border-box;
+    @extend %borde;
+
+    &__cabecera, &__pie {
+
+        grid-column: 1 /4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 80px;
+        @extend %borde;
+        @include colorFondo(rgb(72, 134, 72));
+    }
+
+    &__barraIzq {
+
+        grid-column: 1/2;
+        @extend %borde;
+        @include colorFondo(rgb(241, 241, 140));
+        min-height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    &__main {
+
+        grid-column: 2/3;
+        @extend %borde;
+        @include colorFondo(rgb(168, 168, 248));
+        min-height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    &__barraDrcha {
+
+        grid-column: 3/4;
+        @extend %borde;
+        @include colorFondo(rgb(241, 241, 140));
+        min-height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+}
+
+@media (max-width: 700px) {
+
+    .ContGridOterHerFran {
+
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 100%;
+        box-sizing: border-box;
+        @extend %borde;
+    
+        &__cabecera, &__pie {
+    
+            grid-column: 1 /4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80px;
+            @extend %borde;
+            @include colorFondo(rgb(72, 134, 72));
+        }
+    
+        &__barraIzq {
+    
+            grid-column: 1/4;
+            @extend %borde;
+            @include colorFondo(rgb(241, 241, 140));
+            min-height: 500px;
+    
+        }
+    
+        &__main {
+    
+            grid-column: 1/4;
+            @extend %borde;
+            @include colorFondo(rgb(168, 168, 248));
+            min-height: 500px;
+    
+        }
+    
+        &__barraDrcha {
+    
+            grid-column: 1/4;
+            @extend %borde;
+            @include colorFondo(rgb(241, 241, 140));
+            min-height: 500px;
+    
+        }
+    
+    
+    }
+
+}
