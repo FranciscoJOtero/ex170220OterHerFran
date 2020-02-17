@@ -1,3 +1,44 @@
+body {
+  background-color: #ffdaa3;
+}
 
+.navFlexOterHerFran > div, .navFlexOterHerFran {
+  border: 2px solid black;
+}
 
-/*# sourceMappingURL=StyleOterHerFran.css.map */
+.navFlexOterHerFran {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+.navFlexOterHerFran > div {
+  box-sizing: border-box;
+  padding: 15px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.navFlexOterHerFran > div > a {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 650px) {
+  .navFlexOterHerFran {
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 10px;
+  }
+  .navFlexOterHerFran > div {
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  .navFlexOterHerFran > div > a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+/*# sourceMappingURL=styleoterherfran.css.map */
