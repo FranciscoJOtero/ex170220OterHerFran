@@ -1,0 +1,41 @@
+
+
+.fotoGrid {
+
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+
+    &__f1, &__f2 {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+
+    }
+
+
+}
+
+@media (max-width:700px) {
+
+    .fotoGrid {
+
+        display: block;
+        margin-top: 50px;
+        margin-left: 50px;
+    
+        &__f1, &__f2 {
+    
+            display: block;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+    
+        }
+    
+    
+    }    
+
+}
